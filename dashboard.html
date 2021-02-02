@@ -1,0 +1,81 @@
+<!DOCTYPE html>  
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="mycss.css">
+
+</head>
+<body class="body2">
+		<header class="headerd"><button class="bt" type="button"><a class="aone" href="LoginPage.html">LOGOUT</a></button>
+			
+			<h1 id="title" class="hone">DASHBOARD</h1>
+			</header><hr>
+<div id="contentd" style="text-align: center;"> </div>
+			<div>
+				<p class="puser">USERNAME: <input class="Inputd" type="text"  required placeholder="Username" id="inputdash"><button onclick="show_alert();" class="b2" type="submit">Enter!</button> <br>	
+				</p>
+			</div>	
+
+		
+<div class="wrapper" id="wrapper">
+<table style="width:100%" align='center'  cellspacing=2 cellpadding=5 id="data_table" border=1>
+	<thead>
+<tr>
+<th>SNO</th>
+<th>ActionItems</th>
+<th>TargetDate</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr id="row1">
+<td id="sno_row1">1</td>
+<td id="action_row1">HTML</td>
+<td id="date_row1">1/2/2021</td>
+<td>
+<input type="button" id="edit_button1" value="Edit" class="edit" onclick="edit_row('1')">
+<input type="button" id="save_button1" value="Save" class="save" onclick="save_row('1')">
+<input type="button" value="Delete" class="delete" onclick="delete_row('1')">
+</td>
+</tr>
+
+<tr id="row2">
+<td id="sno_row2">2</td>
+<td id="action_row2">CSS</td>
+<td id="date_row2">1/3/2021</td>
+<td>
+<input type="button" id="edit_button2" value="Edit" class="edit" onclick="edit_row('2')">
+<input type="button" id="save_button2" value="Save" class="save" onclick="save_row('2')">
+<input type="button" value="Delete" class="delete" onclick="delete_row('2')">
+</td>
+</tr>
+
+<tr id="row3">
+<td id="sno_row3">3</td>
+<td id="action_row3">Javascript</td>
+<td id="date_row3">1/4/2021</td>
+<td>
+<input type="button" id="edit_button3" value="Edit" class="edit" onclick="edit_row('3')">
+<input type="button" id="save_button3" value="Save" class="save" onclick="save_row('3')">
+<input type="button" value="Delete" class="delete" onclick="delete_row('3')">
+</td>
+</tr>
+<tr>
+<td id="adding"><input type="text" id="new_sno"></td>
+<td><input type="text" id="new_action"></td>
+<td><input type="text" id="new_date"></td>
+<td><input type="button" class="add" onclick="add_row();" value="Add Row"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div>
+<footer >
+	<div class="p">
+	<p>Copyright &copy 2021. All Rights Reserved. </p>
+	</div>
+
+</footer>
+</div>
+<script type="text/javascript" src="loginPage.js"></script>
+</body>
+</html>

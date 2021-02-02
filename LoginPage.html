@@ -1,0 +1,64 @@
+<!DOCTYPE html>   
+<html>   
+	<head>  
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<title> LOGIN  </title> 
+	
+	
+<style type="text/css">
+	h/*1{
+		text-align: center;
+		color: green;
+
+	}*/
+</style>
+<link rel="stylesheet" type="text/css" href="mycss.css"> 
+</head>    
+<body class="body1"> 
+	<div class="divdiv" id="content">
+<header >	
+	<h1>Hey, good to see you!</h1>
+ <p>Login to get going	</p>
+	
+</header> </div><hr>
+	  <div class="maindiv">
+    
+    <form action="dashboard.html">
+        <div class="login">   
+
+            <label>Username : </label> 
+            <input class="Input1" type="text"  required placeholder="Username" id="email">
+          
+
+            <label>Password : </label>   
+            <input class="Input1" type="password" id="pwd" required placeholder="Password" pattern="(?=.*\d)(?=.*\W+)(?=.*[a-z])(?=.*[A-Z]).{8,}"> 
+
+            <button class="b1" type="submit">Login</button>    
+            
+        </div> 
+        </form>  
+        <div id="message" class="mess">
+  
+  <p class="ptwo">PASSWORD MUST CONTAIN THE FOLLOWING:</p>
+<ul class="ul1">
+  <li><p id="letter" >A <b>lowercase</b> letter</p></li>
+ <li> <p id="capital">A <b>capital (uppercase)</b> letter</p></li>
+ <li> <p id="number">A <b>number</b></p></li>
+ <li> <p id="length">Minimum <b>8 characters</b></p></li>
+ <li> <p id="special character">A <b>special</b> character</p></li>
+</ul>
+</div> 
+</div> <br>
+
+
+<footer >
+	<div class="p">
+	<p>Copyright &copy 2021. All Rights Reserved. </p>
+	</div>
+</footer>   
+
+<script type="text/javascript" src="loginPage.js"></script>
+
+</body>     
+</html>
